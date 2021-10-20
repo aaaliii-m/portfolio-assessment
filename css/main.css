@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#f1f1f1;
+    color: #333;
+    font-family:  Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* HERO AREA */
+
+.hero-wrapper {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-image: url('../assets/img/hero-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-backdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-intro {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+.hero-intro h1 {
+    font-family: 'Great Vibes';
+    font-size: 6rem;
+    margin: 0;
+    line-height: 5rem;
+}
+
+.hero-intro p {
+    font-weight: lighter;
+    font-size: 2rem;
+    margin: 0;
+    line-height: 2rem;
+}
+
+/* /HERO AREA */
+
+/* ABOUT ME */
+
+.bg-wrapper {
+    background-color: #ebeeff;
+    margin-top: 5rem;
+    padding: 3rem;
+}
+
+.about-img img {
+    width: 400px;
+    height: 480px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+/* /ABOUT ME */
+
+/* SKILLS */
+
+.skills-wrapper {
+    margin-top: 5rem;
+    padding: 3rem;
+}
+
+.bar div {
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+}
+
+.skills-icon {
+    background-image: url('../assets/svg/048-web-development-1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 80%;
+}
+
+/* Animations */
+
+.html-bar {
+    animation: html-fill 2s forwards;
+}
+
+.css-bar {
+    animation: css-fill 2s forwards;
+}
+
+.js-bar {
+    animation: js-fill 2s forwards;
+}
+
+.node-bar {
+    animation: node-fill 2s forwards;
+}
+
+
+.skill-details:not(:last-child){
+    margin-bottom: 30px;
+}
+
+/* /SKILLS */
+
+/* Animation keyframes */
+
+@keyframes html-fill {
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes css-fill {
+    100% {
+        width:90%;
+    }
+}
+
+@keyframes js-fill {
+    100% {
+        width:65%;
+    }
+}
+
+@keyframes node-fill {
+    100% {
+        width:5%;
+    }
+}
+
+/* PROJECTS */
+
+.projects-wrapper {
+    margin: 5rem 0;
+}
+
+.project-thumbs {
+    text-align: center;
+}
+
+.project-thumbs img {
+    width: 250px;
+    height: 150px;
+}
+
+/* /PROJECTS */
+
+/* CONTACT ME */
+/* /CONTACT ME */
+
+/* FOOTER */
+
+footer {
+    background-color: #333;
+    margin-top: 40px;
+    color: #fafafa;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* /FOOTER */
